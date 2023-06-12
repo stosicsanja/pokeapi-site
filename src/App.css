@@ -1,0 +1,30 @@
+.card {
+  width: 200px;
+  height: 250px;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+}
+.pokemons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 0 10px;
+}
+.pagination {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.sort .btn:hover {
+  background-color: coral;
+  color: white;
+}
+
+.search .btn:hover {
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+}
