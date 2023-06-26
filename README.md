@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+The project is deployed on a hosting platform: https://pokeapi-site.vercel.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PROJECT SETUP:
 
-## Available Scripts
+After cloning github repository, to set up the project: 
 
-In the project directory, you can run:
+-Open your project directory and run npm install to fetch and install all the required dependencies. 
 
-### `npm start`
+-Once the installation process completes successfully, you'll have all the dependencies needed to run the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Execute npm start in the terminal. This command initiates the project and launches it on port 3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once the project starts running, you can access it by navigating to http://localhost:3000 in your web browser. 
 
-### `npm test`
+By following these steps, you'll have successfully set up the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+PROJECT DESCRIPTION:
 
-### `npm run build`
+The project is built upon React Router. It incorporates multiple pages, including a Home page and Pokemon Details for displaying individual Pokemon details.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Home page serves as the landing page of the application, providing an overview or introduction to the project.
+On the page the user can see top pokemons, search them by name or sort them A-Z, Z-A or default (by their ID).
+When a user clicks on a button View Details on Pokemon card, they are taken to a detailed view of that Pokemon. This view displays comprehensive information about the Pokemon.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Pokemon Details is designed to display detailed information about a specific Pokemon. It leverages the data fetched from an external API or a local data source to populate the page with relevant details, such as the Pokemon's name, image, type, abilities, and other characteristics. Users can explore various Pokemon by accessing their respective pages through dynamic routing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Features:
 
-### `npm run eject`
+-Add to Favorites: Users have the ability to add Pokemons to their favorites list. They can click on an icon "Heart" to add a Pokemon to their favorites collection.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Remove from Favorites: Users can also remove Pokemons from their favorites list. By clicking on an icon "Heart", they can remove a Pokemon from their favorites collection, customizing their list based on their preferences.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Pagination: The app supports pagination to allow users to navigate through multiple pages of Pokemons. The pagination controls, such as "Left" and "Right" arrows, enable users to browse more Pokemons beyond the initial page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Technologies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React.js as the primary JavaScript framework for building the application.
 
-## Learn More
+Axios and Fetch for making HTTP requests to the PokeAPI.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React Router for handling routing between pages.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Local Storage to store and retrieve the user's favorite Pokémon.
 
-### Code Splitting
+Styling Framework: CSS and React Bootstrap for enhanced styling and layout consistency.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Additional: React Icons library
