@@ -17,7 +17,7 @@ const Pokemons = (props) => {
   };
 
   return (
-    <div className="container d-flex justify-content-center my-5">
+    <div className="container d-flex justify-content-center">
       <div>
         <div className="d-flex justify-content-center mb-5">
           <Pagination

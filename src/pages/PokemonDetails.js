@@ -56,7 +56,7 @@ const PokemonDetails = () => {
 
   if (!pokemonDetails.name) {
     return (
-      <div class="mt-5 d-flex justify-content-center align-center">
+      <div class="card-body mt-5 d-flex justify-content-center align-center">
         <div class="spinner-border text-warning" role="status"></div>
       </div>
     );
@@ -64,16 +64,16 @@ const PokemonDetails = () => {
 
   return (
     <div className="container mt-5 d-flex justify-content-center align-items-center">
-      <div className="card single w-25 p-3 ">
+      <div className="card single p-3 ">
         <div className="card-body">
           <h5 className="d-flex justify-content-center align-items-center card-title">
             {pokemonDetails.name}
           </h5>
 
           <img
+            className="card-detail"
             src={pokemonDetails.img}
             alt={pokemonDetails.name}
-            className="card-img-top"
           />
           <div className="card-text">
             <strong>Species:</strong> {pokemonDetails.species}

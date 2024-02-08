@@ -22,24 +22,24 @@ const Pokemon = (props) => {
   };
 
   return (
-    <div className="">
-      <div className="card">
+    <div className="d-flex">
+      <div className="card justify-content-center align-items-center">
         <img
           className="card-img-top"
           src={pokemon.sprites.front_default}
           alt="Card image cap"
         ></img>
         <div className="card-body align-center">
-          <div className="d-flex justify-content-between">
+          <div className="d-flex gap-3 justify-content-center align-items-center">
             <h5 className="card-title">{pokemon.name}</h5>
             <p className="card-text">#{pokemon.id}</p>
           </div>
-          <div className="mt-2 d-flex justify-content-between">
+          <div className="mt-2 d-flex gap-3 justify-content-between align-items-center">
             <Link to={`/pokemon/${pokemon.name}`} className=" btn btn-primary">
               View Details
             </Link>
 
-            <div onClick={clickHeart} className="float-right">
+            <div onClick={clickHeart} className="">
               {heart}
             </div>
           </div>

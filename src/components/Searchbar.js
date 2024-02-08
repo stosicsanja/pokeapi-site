@@ -15,7 +15,7 @@ export default function Searchbar(props) {
   };
 
   return (
-    <div className="search d-flex justify-content-center gap-3 mt-5">
+    <div className="mb-5 search d-flex justify-content-center gap-3 mt-5">
       <div className="p-1">
         <input placeholder="Search Pokemon..." onChange={onChangeHandler} />
       </div>

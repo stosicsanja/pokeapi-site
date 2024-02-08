@@ -1,11 +1,14 @@
-.card {
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 200px;
-  height: 250px;
 }
 .card img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
 }
+
 .pokemons-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -27,17 +30,16 @@
   background-color: beige;
   color: black;
 }
-@media only screen and (min-width: 769px) and (max-width: 1281px) {
+@media only screen and (max-width: 1281px) {
   .pokemons-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .card img {
+    width: 100px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .card img {
-    width: 200px;
-    height: 200px;
-  }
   .pokemons-grid {
     grid-template-columns: repeat(2, 1fr);
   }
