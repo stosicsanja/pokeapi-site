@@ -15,22 +15,13 @@ const Sort = (props) => {
         alphabetically, select one of the options:{" "}
       </p>
       <div className="sort d-flex justify-content-between gap-2 p-2">
-        <div
-          className="btn border border-success rounded p-2"
-          onClick={ascendingEvent}
-        >
+        <div className="btn border rounded p-2" onClick={ascendingEvent}>
           A-Z
         </div>
-        <div
-          className="btn border border-success rounded p-2"
-          onClick={descendingEvent}
-        >
+        <div className="btn border rounded p-2" onClick={descendingEvent}>
           Z-A
         </div>
-        <div
-          className="btn border border-success rounded p-2"
-          onClick={fetchPokemons}
-        >
+        <div className="btn border grounded p-2" onClick={fetchPokemons}>
           Default sort
         </div>
       </div>
