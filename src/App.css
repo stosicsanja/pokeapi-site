@@ -19,12 +19,34 @@
   gap: 10px;
 }
 .sort .btn:hover {
-  background-color: coral;
-  color: white;
+  background-color: beige;
+  color: black;
 }
 
 .search .btn:hover {
-  background-color: yellowgreen;
-  color: white;
-  border: none;
+  background-color: beige;
+  color: black;
+}
+@media only screen and (min-width: 769px) and (max-width: 1281px) {
+  .pokemons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card img {
+    width: 200px;
+    height: 200px;
+  }
+  .pokemons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logo-image {
+    width: 150px;
+  }
+  .pokemons-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

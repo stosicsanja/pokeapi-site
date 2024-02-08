@@ -17,9 +17,9 @@ const Pokemons = (props) => {
   };
 
   return (
-    <div className="container d-flex justify-content-center mt-5">
+    <div className="container d-flex justify-content-center my-5">
       <div>
-        <div className="d-flex justify-content-center mb-5 ">
+        <div className="d-flex justify-content-center mb-5">
           <Pagination
             page={page + 1}
             totalPages={total}
@@ -28,11 +28,13 @@ const Pokemons = (props) => {
           ></Pagination>
         </div>
 
-        <div className="">
-          <div className="col-lg-4 pokemons-grid">
-            {pokemons.map((pokemon, index) => {
-              return <Pokemon pokemon={pokemon} key={pokemon.name}></Pokemon>;
-            })}
+        <div className="container">
+          <div className="row">
+            <div className="pokemons-grid">
+              {pokemons.map((pokemon, index) => {
+                return <Pokemon pokemon={pokemon} key={pokemon.name}></Pokemon>;
+              })}
+            </div>
           </div>
         </div>
       </div>

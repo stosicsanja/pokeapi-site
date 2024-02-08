@@ -20,7 +20,10 @@ export default function Searchbar(props) {
         <input placeholder="Search Pokemon..." onChange={onChangeHandler} />
       </div>
       <div>
-        <button className="btn btn-warning" onClick={onButtonClickHandler}>
+        <button
+          className="btn border rounded p-2"
+          onClick={onButtonClickHandler}
+        >
           Search
         </button>
       </div>

@@ -10,11 +10,11 @@ const Navbar = () => {
     "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png";
 
   return (
-    <div className=" container d-flex justify-content-between">
+    <div className="container d-flex justify-content-between align-items-center mt-5">
       <nav>
-        <img src={imgUrl} alt="pokeapiLogo"></img>
+        <img className="logo-image" src={imgUrl} alt="pokeapiLogo"></img>
       </nav>
-      <div className="mt-5">
+      <div className="">
         ❤️
         {favouritePokemons.length}
       </div>

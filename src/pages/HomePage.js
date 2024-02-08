@@ -10,7 +10,7 @@ const localStorageKey = "favourite_pokemon";
 
 function HomePage() {
   const [pokemons, setPokemons] = useState([]);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   const [total, setTotal] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
   const [favourites, setFavourites] = useState([]);
@@ -30,7 +30,7 @@ function HomePage() {
       const results = await Promise.all(promises);
       setPokemons(results);
       setLoading(false);
-      setTotal(Math.ceil((data.count - 417) / 24));
+      setTotal(Math.ceil(data.count / 24));
     } catch (err) {}
   };
 
@@ -105,7 +105,7 @@ function HomePage() {
           updatefavouritePokemons: updatefavouritePokemons,
         }}
       >
-        <div>
+        <div className="page-wrapper">
           <Navbar></Navbar>
           <div>
             <Sort
