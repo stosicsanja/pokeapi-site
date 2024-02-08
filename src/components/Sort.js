@@ -11,9 +11,9 @@ const Sort = (props) => {
           <div className="d-flex  flex-md-column">
             <div
               className="justify-content-center 
-    gap-3 mt-4"
+    gap-3 mt-4 row"
             >
-              <p className="d-flex justify-content-center mt-3">
+              <p className="d-flex justify-content-center flex-wrap mt-3">
                 If you want to sort{"   "}
                 <span className="mx-2">
                   <CgPokemon></CgPokemon>
